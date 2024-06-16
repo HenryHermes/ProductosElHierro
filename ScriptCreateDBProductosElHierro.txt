@@ -1,0 +1,490 @@
+USE [master]
+GO
+/****** Object:  Database [ProductosElHierro]    Script Date: 15/6/2024 10:21:50 p. m. ******/
+CREATE DATABASE [ProductosElHierro]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'ProductosElHierro', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\ProductosElHierro.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'ProductosElHierro_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\ProductosElHierro_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
+GO
+ALTER DATABASE [ProductosElHierro] SET COMPATIBILITY_LEVEL = 160
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [ProductosElHierro].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [ProductosElHierro] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [ProductosElHierro] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [ProductosElHierro] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET  ENABLE_BROKER 
+GO
+ALTER DATABASE [ProductosElHierro] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [ProductosElHierro] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET RECOVERY FULL 
+GO
+ALTER DATABASE [ProductosElHierro] SET  MULTI_USER 
+GO
+ALTER DATABASE [ProductosElHierro] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [ProductosElHierro] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [ProductosElHierro] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [ProductosElHierro] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [ProductosElHierro] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [ProductosElHierro] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'ProductosElHierro', N'ON'
+GO
+ALTER DATABASE [ProductosElHierro] SET QUERY_STORE = ON
+GO
+ALTER DATABASE [ProductosElHierro] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
+GO
+USE [ProductosElHierro]
+GO
+/****** Object:  Table [dbo].[Productos]    Script Date: 15/6/2024 10:21:50 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Productos](
+	[IDProducto] [int] NOT NULL,
+	[Nombre] [varchar](100) NOT NULL,
+	[Descripcion] [varchar](255) NULL,
+	[Precio] [numeric](11, 2) NOT NULL,
+	[Stock] [int] NULL,
+	[FechaDeCreacion] [datetime] NULL,
+	[FechaDeAct] [datetime] NULL,
+	[Activo] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IDProducto] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[roles]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[roles](
+	[IDRol] [int] IDENTITY(1,1) NOT NULL,
+	[rolName] [varchar](100) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IDRol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuarios](
+	[IDUsuarios] [int] NOT NULL,
+	[NombreUsuario] [varchar](100) NOT NULL,
+	[Contra] [varchar](255) NOT NULL,
+	[Email] [varchar](100) NOT NULL,
+	[Rol] [int] NOT NULL,
+	[Activo] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IDUsuarios] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Productos] ([IDProducto], [Nombre], [Descripcion], [Precio], [Stock], [FechaDeCreacion], [FechaDeAct], [Activo]) VALUES (122, N'yeso', N'yeso muy resistente', CAST(20.20 AS Numeric(11, 2)), 100, CAST(N'2024-06-14T14:53:24.437' AS DateTime), CAST(N'2024-06-14T14:53:24.437' AS DateTime), 1)
+GO
+INSERT [dbo].[Productos] ([IDProducto], [Nombre], [Descripcion], [Precio], [Stock], [FechaDeCreacion], [FechaDeAct], [Activo]) VALUES (123, N'varilla3x3', N'varrilla muy resistente', CAST(32.20 AS Numeric(11, 2)), 100, CAST(N'2024-06-14T14:53:24.387' AS DateTime), CAST(N'2024-06-14T14:53:24.387' AS DateTime), 1)
+GO
+INSERT [dbo].[Productos] ([IDProducto], [Nombre], [Descripcion], [Precio], [Stock], [FechaDeCreacion], [FechaDeAct], [Activo]) VALUES (124, N'TuboPBC2', N'Tubo muy resistente y duradero', CAST(100.50 AS Numeric(11, 2)), 150, CAST(N'2024-06-14T18:14:26.917' AS DateTime), CAST(N'2024-06-14T18:22:32.933' AS DateTime), 1)
+GO
+INSERT [dbo].[Productos] ([IDProducto], [Nombre], [Descripcion], [Precio], [Stock], [FechaDeCreacion], [FechaDeAct], [Activo]) VALUES (125, N'Segueta', N'Segueta muy buena', CAST(1000.00 AS Numeric(11, 2)), 1000, CAST(N'2024-06-15T14:02:41.040' AS DateTime), CAST(N'2024-06-15T14:02:41.040' AS DateTime), 0)
+GO
+SET IDENTITY_INSERT [dbo].[roles] ON 
+GO
+INSERT [dbo].[roles] ([IDRol], [rolName]) VALUES (1, N'Admin')
+GO
+INSERT [dbo].[roles] ([IDRol], [rolName]) VALUES (2, N'Usuario')
+GO
+SET IDENTITY_INSERT [dbo].[roles] OFF
+GO
+INSERT [dbo].[Usuarios] ([IDUsuarios], [NombreUsuario], [Contra], [Email], [Rol], [Activo]) VALUES (1116783, N'Whisman', N'$2a$11$Hqa6z0M.W34ucxeujOx/TObM2AqUe.pshMTWIY3WGNVCwaoASVSWW', N'Whisman@Company.com.co', 2, 1)
+GO
+INSERT [dbo].[Usuarios] ([IDUsuarios], [NombreUsuario], [Contra], [Email], [Rol], [Activo]) VALUES (1333810, N'Hermes', N'$2a$11$plzrBKLNEsFzpEP/xYF2oO/fbhq8bFZeVEZBinbFB7oFbp7EfspXy', N'Hermes@Company.com.do', 1, 1)
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [Email_unique]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+ALTER TABLE [dbo].[Usuarios] ADD  CONSTRAINT [Email_unique] UNIQUE NONCLUSTERED 
+(
+	[Email] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [UserName_Unique]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+ALTER TABLE [dbo].[Usuarios] ADD  CONSTRAINT [UserName_Unique] UNIQUE NONCLUSTERED 
+(
+	[NombreUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Productos] ADD  DEFAULT ('') FOR [Descripcion]
+GO
+ALTER TABLE [dbo].[Productos] ADD  DEFAULT ((0)) FOR [Stock]
+GO
+ALTER TABLE [dbo].[Productos] ADD  DEFAULT (getdate()) FOR [FechaDeCreacion]
+GO
+ALTER TABLE [dbo].[Productos] ADD  DEFAULT (getdate()) FOR [FechaDeAct]
+GO
+ALTER TABLE [dbo].[Productos] ADD  DEFAULT ((1)) FOR [Activo]
+GO
+ALTER TABLE [dbo].[Usuarios] ADD  DEFAULT ((1)) FOR [Activo]
+GO
+ALTER TABLE [dbo].[Usuarios]  WITH CHECK ADD FOREIGN KEY([Rol])
+REFERENCES [dbo].[roles] ([IDRol])
+GO
+/****** Object:  StoredProcedure [dbo].[ActivateProduct]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+--create procedure InsertProductos (
+--@IDProducto int,
+--@Nombre varchar(100),
+--@Descripcion varchar(255),
+--@Precio Numeric(11,2),
+--@Stock int
+--)
+--as
+--insert Productos(IDProducto,Nombre,Descripcion,Precio,Stock) values(@IDProducto,@Nombre,@Descripcion,@Precio,@Stock)
+--go
+
+--create procedure UpdateProductos (
+--@IDProducto int,
+--@Nombre varchar(100) ,
+--@Descripcion varchar(255),
+--@Precio Numeric(11,2),
+--@Stock int
+--)
+--as
+--update Productos set Nombre = @Nombre , Descripcion= @Descripcion, Precio=@Precio , Stock=@Stock, FechaDeAct = getdate() where IDProducto = @IDProducto
+--go
+
+
+--create procedure GetProductos (
+--@IDProducto int = 0,
+--@Nombre varchar(100) = '/',
+--@Descripcion varchar(255) = '/',
+--@Precio Numeric(11,2) = -1,
+--@Stock int = -999999,
+--@FechaDeCreacion datetime = '31/12/1999',
+--@FechaDeAct datetime = '31/12/1999'
+--)
+--as
+--Select * from Productos where IDProducto = (case when @IDProducto=0 then IDProducto else @IDProducto end) and
+--Nombre = (case when @Nombre='/' then Nombre else @Nombre end) and
+--Descripcion = (case when @Descripcion='/' then Descripcion else @Descripcion end) and
+--Precio = (case when @Precio=-1 then Precio else @Precio end) and
+--Stock = (case when @Stock=-999999 then Stock else @Stock end) and
+--FechaDeCreacion = (case when @FechaDeCreacion='31/12/1999' then FechaDeCreacion else @FechaDeCreacion end) and
+--FechaDeAct = (case when @FechaDeAct='31/12/1999' then FechaDeAct else @FechaDeAct end)
+--go
+
+--create procedure DeactivateProduct(
+--@IDProducto int
+--)
+--as
+--update Productos set Activo = 0 where IDProducto = @IDProducto
+
+create procedure [dbo].[ActivateProduct](
+@IDProducto int
+)
+as
+update Productos set Activo = 1 where IDProducto = @IDProducto
+GO
+/****** Object:  StoredProcedure [dbo].[ActivateUser]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+create procedure [dbo].[ActivateUser](
+@IDUsuarios int
+)
+as
+update Usuarios set Activo = 0 where IDUsuarios = @IDUsuarios
+GO
+/****** Object:  StoredProcedure [dbo].[DeactivateProduct]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+--create procedure GetProductos (
+--@IDProducto int = 0,
+--@Nombre varchar(100) = '/',
+--@Descripcion varchar(255) = '/',
+--@Precio Numeric(11,2) = -1,
+--@Stock int = -999999,
+--@FechaDeCreacion datetime = '31/12/1999',
+--@FechaDeAct datetime = '31/12/1999'
+--)
+--as
+--Select * from Productos where IDProducto = (case when @IDProducto=0 then IDProducto else @IDProducto end) and
+--Nombre = (case when @Nombre='/' then Nombre else @Nombre end) and
+--Descripcion = (case when @Descripcion='/' then Descripcion else @Descripcion end) and
+--Precio = (case when @Precio=-1 then Precio else @Precio end) and
+--Stock = (case when @Stock=-999999 then Stock else @Stock end) and
+--FechaDeCreacion = (case when @FechaDeCreacion='31/12/1999' then FechaDeCreacion else @FechaDeCreacion end) and
+--FechaDeAct = (case when @FechaDeAct='31/12/1999' then FechaDeAct else @FechaDeAct end)
+--go
+
+create procedure [dbo].[DeactivateProduct](
+@IDProducto int
+)
+as
+update Productos set Activo = 0 where IDProducto = @IDProducto
+GO
+/****** Object:  StoredProcedure [dbo].[DeactivateUser]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+create procedure [dbo].[DeactivateUser](
+@IDUsuarios int
+)
+as
+update Usuarios set Activo = 0 where IDUsuarios = @IDUsuarios
+GO
+/****** Object:  StoredProcedure [dbo].[GetProductos]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+--create procedure InsertProductos (
+--@IDProducto int,
+--@Nombre varchar(100),
+--@Descripcion varchar(255),
+--@Precio Numeric(11,2),
+--@Stock int
+--)
+--as
+--insert Productos(IDProducto,Nombre,Descripcion,Precio,Stock) values(@IDProducto,@Nombre,@Descripcion,@Precio,@Stock)
+--go
+
+--create procedure UpdateProductos (
+--@IDProducto int,
+--@Nombre varchar(100) ,
+--@Descripcion varchar(255),
+--@Precio Numeric(11,2),
+--@Stock int
+--)
+--as
+--update Productos set Nombre = @Nombre , Descripcion= @Descripcion, Precio=@Precio , Stock=@Stock, FechaDeAct = getdate() where IDProducto = @IDProducto
+--go
+
+
+CREATE procedure [dbo].[GetProductos] (
+@IDProducto int = 0,
+@Nombre varchar(100) = '',
+@Descripcion varchar(255) = '',
+@Precio1 Numeric(11,2) = 0,
+@Precio2 Numeric(11,2) = 999999999.99,
+@Stock1 int = 0,
+@Stock2 int = 999999,
+@FechaDeCreacion1 datetime = '1999/12/31',
+@FechaDeCreacion2 datetime = '1999/12/31',
+@FechaDeAct1 datetime = '1999/12/31',
+@FechaDeAct2 datetime = '1999/12/31'
+)
+as
+Select * from Productos where IDProducto = (case when @IDProducto=0 then IDProducto else @IDProducto end) and
+Nombre = (case when @Nombre='' then Nombre else @Nombre end) and
+Descripcion = (case when @Descripcion='' then Descripcion else @Descripcion end) and
+(Precio between @Precio1 and @Precio2) and
+(Stock between @Stock1 and @Stock2) and
+FechaDeCreacion between @FechaDeCreacion1 and (case when @FechaDeCreacion2='1999/12/31' then GETDATE() else @FechaDeCreacion2 end) and
+FechaDeAct between @FechaDeAct1 and  (case when @FechaDeAct2='1999/12/31' then GETDATE() else @FechaDeAct2 end) and
+Activo = 1
+GO
+/****** Object:  StoredProcedure [dbo].[GetRoles]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[GetRoles] (
+@IDRol int=0,
+@rolName varchar(100) = ''
+)
+as
+select * from roles where IDRol= (case when @IDRol=0 then IDRol else @IDRol end) and
+rolName= (case when @rolName='' then rolName else @rolName end)
+GO
+/****** Object:  StoredProcedure [dbo].[GetUsuarios]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE procedure [dbo].[GetUsuarios] (
+@IDUsuarios int =0,
+@NombreUsuario varchar(100) = '',
+@Contra varchar(255) = '',
+@Email varchar(100) = '',
+@Rol int = 0
+)
+as
+Select * from Usuarios where IDUsuarios = (case when @IDUsuarios=0 then IDUsuarios else @IDUsuarios end) and
+NombreUsuario = (case when @NombreUsuario='' then NombreUsuario else @NombreUsuario end) and
+Contra = (case when @Contra='' then Contra else @Contra end) and
+Email = (case when @Email='' then Email else @Email end) and
+Rol = (case when @Rol=0 then Rol else @Rol end) and 
+Activo = 1
+GO
+/****** Object:  StoredProcedure [dbo].[InsertProductos]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[InsertProductos] (
+@IDProducto int,
+@Nombre varchar(100),
+@Descripcion varchar(255),
+@Precio Numeric(11,2),
+@Stock int
+)
+as
+insert Productos(IDProducto,Nombre,Descripcion,Precio,Stock) values(@IDProducto,@Nombre,@Descripcion,@Precio,@Stock)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertRoles]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[InsertRoles] (
+@rolName varchar(100)
+)
+as
+insert roles(rolName) values(@rolName)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertUsuarios]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[InsertUsuarios] (
+@IDUsuarios int,
+@NombreUsuario varchar(100),
+@Contra varchar(255),
+@Email varchar(100),
+@Rol int
+)
+as
+insert Usuarios(IDUsuarios,NombreUsuario,Contra,Email,Rol) values(@IDUsuarios,@NombreUsuario,@Contra,@Email,@Rol)
+GO
+/****** Object:  StoredProcedure [dbo].[UpdateProductos]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+--create procedure InsertProductos (
+--@IDProducto int,
+--@Nombre varchar(100),
+--@Descripcion varchar(255),
+--@Precio Numeric(11,2),
+--@Stock int
+--)
+--as
+--insert Productos(IDProducto,Nombre,Descripcion,Precio,Stock) values(@IDProducto,@Nombre,@Descripcion,@Precio,@Stock)
+--go
+
+CREATE procedure [dbo].[UpdateProductos] (
+@IDProducto int,
+@Nombre varchar(100) ,
+@Descripcion varchar(255),
+@Precio Numeric(11,2),
+@Stock int
+)
+as
+update Productos set Nombre = @Nombre , Descripcion= @Descripcion, Precio=@Precio , Stock=@Stock, FechaDeAct = getdate() where IDProducto = @IDProducto
+GO
+/****** Object:  StoredProcedure [dbo].[UpdateUsuarios]    Script Date: 15/6/2024 10:21:51 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure [dbo].[UpdateUsuarios] (
+@IDUsuarios int,
+@NombreUsuario varchar(100),
+@Contra varchar(255),
+@Email varchar(100),
+@Rol int
+)
+as
+update Usuarios set NombreUsuario = @NombreUsuario , Contra= @Contra, Email=@Email , Rol=@Rol where IDUsuarios = @IDUsuarios
+GO
+USE [master]
+GO
+ALTER DATABASE [ProductosElHierro] SET  READ_WRITE 
+GO
