@@ -1,0 +1,60 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="d-flex justify-content-center bg-secondary-subtle">
+    <p class="m-3 align-self-center fs-4 fw-medium">Busqueda de productos</p>
+</div>
+
+<div class=" p-2 " >
+    <form class="d-flex justify-content-start gap-3">
+        <div class="mb-3 d-inline">
+            <input type="number" id="typeNumber" class="form-control" placeholder="Id del Producto" min="1" pattern=""/>
+        </div>
+        <div class="mb-3 d-inline">
+          <input type="Username" class="form-control" placeholder="Nombre Producto" >
+        </div>
+        <div class="mb-3 d-inline">
+          <input type="text" class="form-control" id="Description" placeholder="Descripcion">
+        </div>
+
+        <div class="mb-3 d-inline d-flex">
+            <div class=" d-inline">
+                <input type="number" id="typeNumber" class="form-control rounded-0 rounded-start" placeholder="Precio min" min="0"/>
+            </div>
+            <div class="d-inline">
+                <input type="number" id="typeNumber" class="form-control rounded-0 rounded-end" placeholder="Precio max" min="0"/>
+            </div>
+        </div>
+        
+        <div class="mb-3 d-inline">
+            <input type="number" id="typeNumber" class="form-control" placeholder="Stock"/>
+        </div>
+        <button type="submit" class="mb-3 w-auto h-auto d-inline btn btn-primary align-self-center">Submit</button>
+    </form>
+</div>
+
+<div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex">
+            Producto 1 
+            <button type="submit" class="w-auto h-auto d-inline btn btn-danger align-self-center ms-auto">Delete</button>
+        </li>
+        <li class="list-group-item d-flex">
+            Producto 2
+            <button type="submit" class="w-auto h-auto d-inline btn btn-danger align-self-center ms-auto">Delete</button>
+        </li>
+        <li class="list-group-item d-flex">
+            Producto 3
+            <button type="submit" class="w-auto h-auto d-inline btn btn-danger align-self-center ms-auto">Delete</button>
+        </li>
+        <li class="list-group-item d-flex">
+            Producto 4
+            <button type="submit" class="w-auto h-auto d-inline btn btn-danger align-self-center ms-auto">Delete</button>
+        </li>
+        <li class="list-group-item d-flex">
+            Producto 5
+            <button type="submit" class="w-auto h-auto d-inline btn btn-danger align-self-center ms-auto">Delete</button>
+        </li>
+      </ul>
+</div>
+
+
