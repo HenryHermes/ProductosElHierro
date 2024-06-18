@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApisElHierroJWT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c3dba43957a77bb0b95a10d72385b83efe8dcf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApisElHierroJWT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApisElHierroJWT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

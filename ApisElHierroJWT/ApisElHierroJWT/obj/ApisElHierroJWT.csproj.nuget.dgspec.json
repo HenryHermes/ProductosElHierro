@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj": {}
+    "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj": {}
   },
   "projects": {
-    "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj": {
+    "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
+        "projectUniqueName": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
         "projectName": "ApisElHierroJWT",
-        "projectPath": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
+        "projectPath": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
         "packagesPath": "C:\\Users\\henry\\.nuget\\packages\\",
-        "outputPath": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\obj\\",
+        "outputPath": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

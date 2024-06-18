@@ -1,34 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\hh\\ApisElHierroJWT\\",
+  "WorkspaceRootPath": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\ApisElHierroJWT\\apiselhierrojwt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\ApisElHierroJWT\\apiselhierrojwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\ApisElHierroJWT\\apiselhierrojwt\\business\\authservice\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\business\\authservice\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|c:\\hh\\apiselhierrojwt\\apiselhierrojwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\ApisElHierroJWT\\apiselhierrojwt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\ApisElHierroJWT\\apiselhierrojwt\\business\\authservice\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\business\\authservice\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\business\\authservice\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|c:\\hh\\apiselhierrojwt\\apiselhierrojwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|c:\\hh\\githubpersonal\\productoselhierro\\apiselhierrojwt\\apiselhierrojwt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\business\\authservice\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\business\\authservice\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\apiselhierrojwt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C6419D-549E-41AE-B9D0-618F7DB94BF9}|ApisElHierroJWT\\ApisElHierroJWT.csproj|solutionrelative:apiselhierrojwt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,62 +67,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\appsettings.json",
-              "RelativeDocumentMoniker": "ApisElHierroJWT\\appsettings.json",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\appsettings.json",
-              "RelativeToolTip": "ApisElHierroJWT\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-16T00:55:31.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ApisElHierroJWT\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ApisElHierroJWT\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:35:20.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "ApisElHierroJWT\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\ProductController.cs",
               "RelativeToolTip": "ApisElHierroJWT\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAQwBsAAABeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T00:35:09.691Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\appsettings.json",
+              "RelativeDocumentMoniker": "ApisElHierroJWT\\appsettings.json",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\appsettings.json",
+              "RelativeToolTip": "ApisElHierroJWT\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-16T00:55:31.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ApisElHierroJWT\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ApisElHierroJWT\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T00:35:20.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ApisElHierroJWT\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Controllers\\AuthController.cs",
               "RelativeToolTip": "ApisElHierroJWT\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAACMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T00:34:57.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
               "RelativeDocumentMoniker": "ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
               "RelativeToolTip": "ApisElHierroJWT\\Business\\AuthService\\Interface\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -131,29 +133,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
-              "RelativeDocumentMoniker": "ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
-              "RelativeToolTip": "ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwBQAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Program.cs",
+              "RelativeDocumentMoniker": "ApisElHierroJWT\\Program.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Program.cs",
+              "RelativeToolTip": "ApisElHierroJWT\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFMAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:34:31.888Z",
+              "WhenOpened": "2024-06-16T00:36:49.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Program.cs",
-              "RelativeDocumentMoniker": "ApisElHierroJWT\\Program.cs",
-              "ToolTip": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\Program.cs",
-              "RelativeToolTip": "ApisElHierroJWT\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAlAAAA",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
+              "RelativeDocumentMoniker": "ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
+              "ToolTip": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
+              "RelativeToolTip": "ApisElHierroJWT\\Business\\AuthService\\Implementation\\AuthService.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:36:49.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T00:34:31.888Z"
             }
           ]
         }

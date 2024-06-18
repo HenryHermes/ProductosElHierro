@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XLNNCbERkCLnOW1cCJ9CKlgXWggvq+9BDVqEzpMCliw7xQEm8d3MBJ7VwoR6XbIH34sd8XjRV+78S+h9VCvruw==",
+  "dgSpecHash": "VDwWbptFFfih8xBZ7483a3gxbnBdYWgHwUoCkWSjX0rV4mZ64pGfTaOaCehueN2/K4Uub7gDGDeodyklfP1Gwg==",
   "success": true,
-  "projectFilePath": "C:\\hh\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
+  "projectFilePath": "C:\\hh\\GithubPersonal\\ProductosElHierro\\ApisElHierroJWT\\ApisElHierroJWT\\ApisElHierroJWT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henry\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\henry\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",

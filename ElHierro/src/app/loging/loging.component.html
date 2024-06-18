@@ -24,17 +24,18 @@
     </svg>
   </div>
   <div class=" position-relative top-0 start-50 translate-middle-x w-50 bg-body-tertiary p-2 rounded d-block" >
-    <form >
+    <form #usersForm="ngForm" (ngSubmit)="GetFormData(usersForm.value)">
         <div class="mb-3">
           <label for="UserName" class="form-label">Nombre de Usuario </label>
-          <input #box2 (keyup)="GetUsername(box2.value)" type="Username" class="form-control" id="UserName" >
-        </div>
-        <div class="mb-3">
-          <label for="Password" class="form-label">Contraseña</label>
-          <input #box (keyup)="GetPassword(box.value)" type="password" class="form-control" id="Password">
+          <input ngModel type="text" class="form-control" name="Username" >
         </div>
         
-        <button type="submit" class="btn btn-primary position-relative bottom-0 start-50 translate-middle-x" (click)="ChangePage()">Submit</button>
+        <div class="mb-3">
+          <label for="Password" class="form-label">Contraseña</label>
+          <input ngModel type="password" class="form-control" name="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary position-relative bottom-0 start-50 translate-middle-x" >Submit</button>
     </form>
   </div>
 </div>
