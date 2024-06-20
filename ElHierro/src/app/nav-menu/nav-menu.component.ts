@@ -12,7 +12,10 @@ export class NavMenuComponent {
   constructor( private router: Router ) { }
 
   ChangePageUsuario(){
-    this.router.navigate(['../Usuarios'])
+    if(localStorage.getItem('rol')=='1'){
+      this.router.navigate(['../Usuarios'])
+    }
+    
   }
 
   ChangePageProducto(){
@@ -24,6 +27,8 @@ export class NavMenuComponent {
   }
 
   ChangePageCrearUsuario(){
-    this.router.navigate(['../CrearUsuarios'])
+    if(localStorage.getItem('rol')=='1'){
+      this.router.navigate(['../CrearUsuarios'])
+    }
   }
 }

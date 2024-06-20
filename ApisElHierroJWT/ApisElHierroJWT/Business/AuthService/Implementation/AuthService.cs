@@ -61,9 +61,10 @@ namespace ApisElHierroJWT.Business.AuthService.Implementation
 
         }
 
-        public async Task<string> Login(string email, string password)
+        public async Task<TokenReturn> Login(string email, string password)
         {
-            
+
+            TokenReturn tokenReturn = null;
             Usuarios user = null;
             List<Usuarios> usuarios = TraerUser(email);
             bool verified = false;
@@ -74,12 +75,14 @@ namespace ApisElHierroJWT.Business.AuthService.Implementation
                 {
                     verified = true;
                     user = usuario;
+                    tokenReturn = new TokenReturn();
+                    tokenReturn.rol = usuario.Rol;
                 }
             }
 
             if (!verified)
             {
-                return "";
+                return tokenReturn;
             }
             
 
@@ -101,8 +104,9 @@ namespace ApisElHierroJWT.Business.AuthService.Implementation
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            
-            return tokenHandler.WriteToken(token);
+            tokenReturn.token = tokenHandler.WriteToken(token);
+
+            return tokenReturn;
         }
 
        

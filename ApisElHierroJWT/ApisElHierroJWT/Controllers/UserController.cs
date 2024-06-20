@@ -67,10 +67,8 @@ namespace ApisElHierroJWT.Controllers
             {
                 success = succeess,
                 message = message,
-                result = new
-                {
-                    ProductosEncontrados = usuarios
-                }
+                result =  usuarios
+                
             };
 
         }

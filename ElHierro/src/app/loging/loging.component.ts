@@ -20,8 +20,8 @@ export class LogingComponent {
   UserName:string = ''
   Password:string = ''
 
-  ChangePage(IsUser: boolean){
-    if (IsUser==true) {
+  ChangePage(rol: number){
+    if (rol!=0) {
       this.router.navigate(['../Producto'])
     }
     
@@ -32,8 +32,9 @@ export class LogingComponent {
     this.Password=Data.password
     
     this.User.LoginUsers(Data).subscribe((Result : LoginResponse) => {
-      this.ChangePage(Result.success)
-      localStorage.setItem('JWTToken', Result.message)
+      this.ChangePage(Result.rol)
+      localStorage.setItem('JWTToken', Result.token)
+      localStorage.setItem('rol', Result.rol.toFixed())
     })
 
   }

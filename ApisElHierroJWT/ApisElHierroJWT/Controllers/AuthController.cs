@@ -33,12 +33,12 @@ namespace ApisElHierroJWT.Controllers
                 return BadRequest(new { message = "Password needs to entered" });
             }
 
-            string? loggedInUser = await _authService.Login(user.UserName, user.Password);
+            TokenReturn? loggedInUser = await _authService.Login(user.UserName, user.Password);
 
-            if (loggedInUser != "")
+            if (loggedInUser != null)
             {
-                var response = new { success = true, message = loggedInUser };
-                return Ok(response);
+                
+                return Ok(loggedInUser);
             }
 
             return BadRequest(new { message = "User login unsuccessful" });
